@@ -1,53 +1,34 @@
 @use "../../variables/index" as *;
 @use "../../base/index" as *;
-
-.text_animation::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(107, 75, 1, 0.777),
-    transparent
-  );
-  transform: skewX(-20deg);
-  animation: shine 5s ease infinite;
-}
+@use "../animatiom/fadeEffect" as *;
 
 .deals_container {
   background: $background-color;
-  max-width: 80vw;
   position: relative;
   overflow: hidden;
+  padding: 2rem;
+}
+
+.deals_container span {
+  text-align: end;
 }
 
 .deals_tabs {
-  margin: -1rem auto 2rem;
+  width: 50%;
+  margin: 0rem auto 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   gap: 1rem;
   position: relative;
 }
 
 .deals_container .tab_content {
   display: none;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   animation: fadeEffect 1s;
-}
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Показываем bmw */
@@ -144,7 +125,7 @@
   gap: 1rem;
 }
 
-.deals_card_grid div {
+.deals_card_grid li {
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -152,7 +133,7 @@
   color: $text-light;
 }
 
-.deals_card_grid div span {
+.deals_card_grid li span {
   font-size: 1.6rem;
   color: $goldenrod;
 }
@@ -180,13 +161,15 @@
   color: $text-light;
 }
 
-.deals_card_footer a {
+.deals_card_footer button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: $extra-light;
+  background-color: transparent;
+  border: none;
+  color: $text-main;
 }
 
 .deals_card_footer span i {
@@ -198,75 +181,49 @@
   color: $text-light;
 }
 
-.deals_card_footer a:hover {
+.deals_card_footer button:hover {
   color: $text-light;
 }
 
-@media screen and (min-width: 748px) {
-  .deals_container .tab_content {
-    grid-template-columns: repeat(2, 1fr);
-  }
+// @media screen and (min-width: 748px) {
+//   .deals_container .tab_content {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
 
-  .deals_tabs {
-    width: 45%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
+//   .deals_tabs {
+//     // width: 45%;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 1rem;
+//     margin-bottom: 3rem;
+//   }
 
-  .deals_card h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
+//   .deals_card h4 {
+//     font-size: 1.5rem;
+//     font-weight: 400;
+//   }
 
-  .deals_card_grid div {
-    font-size: 1.2rem;
-  }
+//   .deals_card_grid div {
+//     font-size: 1.2rem;
+//   }
 
-  .deals_card_grid div i {
-    font-size: 1.5rem;
-  }
+//   .deals_card_grid div i {
+//     font-size: 1.5rem;
+//   }
 
-  .deals_card_footer h3 {
-    font-size: 1.8rem;
-  }
+//   .deals_card_footer h3 {
+//     font-size: 1.8rem;
+//   }
 
-  .deals_card_footer h3 span {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
+//   .deals_card_footer h3 span {
+//     font-size: 1.2rem;
+//     font-weight: 300;
+//   }
 
-  .deals_card_footer a {
-    font-size: 1.5rem;
-  }
+//   .deals_card_footer a {
+//     font-size: 1.5rem;
+//   }
 
-  .deals_card_footer span i {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .deals_container {
-    padding-top: 3rem;
-  }
-
-  .deals_container .section_container span {
-    text-align: end;
-  }
-
-  .deals_container .tab_content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-  }
-
-  .deals_tabs {
-    width: 45%;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .deals_card {
-    padding: 2rem;
-  }
-}
+//   .deals_card_footer span i {
+//     font-size: 3rem;
+//   }
+// }

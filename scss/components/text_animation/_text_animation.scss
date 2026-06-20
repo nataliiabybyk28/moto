@@ -1,0 +1,19 @@
+@use "../../base/index" as *;
+@use "../../variables/" as *;
+
+.text_animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(107, 75, 1, 0.777),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 5s ease infinite;
+}

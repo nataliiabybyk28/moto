@@ -1,0 +1,11 @@
+@use "../../base/index" as *;
+@use "../../variables/index" as *;
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

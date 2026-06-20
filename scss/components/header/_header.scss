@@ -1,14 +1,16 @@
 @use "../../variables/index" as *;
 @use "../..//base/index" as *;
+@use "../../layout/index" as *;
 
 .header {
   min-height: 100vh;
   position: relative;
-  background: url(../images/images-moto/12.png) center / cover no-repeat fixed;
+  background: url(../images/images-moto/32.png) center / cover no-repeat fixed;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  display: flex;
 }
 
 .header::before {
@@ -28,52 +30,213 @@
 }
 
 .header_container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.section_header {
-  max-width: 800px;
-  margin-inline: auto;
-  font-size: 2rem;
-  color: $white;
-  font-family: $font-heading;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
+  align-items: center;
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .header {
-    padding-top: 7rem;
-  }
+.header_container .section_header {
+  max-width: 900px;
+  padding: 3rem 3rem 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
 
-  .section_header {
-    max-width: 910px;
-    font-size: 3rem;
-  }
+.span-ride {
+  color: $gold-main;
+  font-size: clamp(5rem, 12vw, 12rem);
+  font-weight: 800;
+  letter-spacing: 10px;
+  line-height: 0.9;
+}
 
-  .header_container .section_header {
-    font-size: 4rem;
+.hero-line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.today {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-back {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem 4rem;
+  background: linear-gradient(
+    to right,
+    rgba(12, 12, 12, 0.4),
+    rgba(12, 12, 12, 0.4)
+  );
+  backdrop-filter: blur(4px);
+  border-radius: 24px;
+}
+
+.header_container .section_subheader {
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  color: $gold-main;
+}
+
+.newsletter {
+  max-width: 500px;
+  text-align: center;
+  padding: 0rem 1rem;
+  h3 {
+    font-family: $font-heading;
+    padding: 0.3rem;
+    margin: 3rem auto 1rem;
+    color: $text-main;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
 
-@media (min-width: 1158px) and (max-width: 1440px) {
-  .header {
-    padding-top: 3rem;
+.newsletter_form {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 105, 4, 0.4);
+  box-shadow: 0 0 30px rgba(168, 105, 4, 0.2);
+}
+
+.newsletter_form:hover {
+  border: 1px solid $gold-main;
+}
+
+.newsletter_form input {
+  flex: 1;
+  border: none;
+  font-family: $font-heading;
+  outline: none;
+  background: transparent;
+  padding: 1rem 1.5rem;
+  color: $white;
+  font-size: 0.9rem;
+}
+
+.newsletter_form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter_form button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $white;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, $golden, darkgoldenrod);
+  transition: all 0.3s ease;
+}
+
+.newsletter_form button:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 992px) {
+  .header_container .section_header {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+  .hero-line {
+    display: block;
   }
 
-  .header_container {
-    justify-content: flex-start;
-    align-items: flex-start;
+  .newsletter_form {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-back {
+    width: 100%;
+    padding: 1.5rem;
   }
 
   .header_container .section_header {
-    margin: 0;
-    text-align: left;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .hero-line {
+    display: block;
+  }
+
+  .span-ride {
     font-size: 6rem;
+    letter-spacing: 4px;
+  }
+
+  .header_container .section_subheader {
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_container .section_header {
+    font-size: 1.5rem;
+  }
+
+  .span-ride {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+  }
+
+  .newsletter_form input {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .newsletter_form button {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-back {
+    margin-top: 7rem;
+  }
+
+  .hero-line {
+    display: block;
+  }
+
+  .span-ride {
+    font-size: 3.5rem;
+  }
+
+  .header_container .section_header {
+    line-height: 1.5;
+  }
+
+  .newsletter h3 {
+    margin: 0rem auto 0.5rem;
+    letter-spacing: 0;
+    font-size: 1rem;
   }
 }

@@ -1,0 +1,11 @@
+@use "../../base/index" as *;
+@use "../../variables/index" as *;
+
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}

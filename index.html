@@ -28,6 +28,8 @@
   </head>
 
   <body>
+
+    <!-- Section_backgraund (полосочки на всё body)-->
     <section>
       <div class="section_backgraund">
         <span></span>
@@ -38,103 +40,91 @@
         <span></span>
         <span></span>
       </div>
+    </section>
 
       <!-- NAVIGATION -->
-      <nav class="navigation">
-        <div class="nav_header section_container">
-          <div class="nav_logo">
-            <a href="#"
-              ><img src="./images/images-moto/logo.png" alt="logo"
-            /></a>
+        <nav class="navigation">
+          <div class="nav_header section_container">
+            <div class="nav_logo">
+              <a href="#"><img src="./images/images-moto/logo.png" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle-2"/>
+            <label for="menu-toggle-2" class="nav_menu_btn"><i class="ri-menu-4-line"></i></label>
+
+            <ul class="nav_links" id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#deals">Motorcycles</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
           </div>
-          <input type="checkbox" id="menu-toggle-2" />
-          <label for="menu-toggle-2" class="nav_menu_btn">
-            <i class="ri-menu-4-line"></i>
-          </label>
-          <ul class="nav_links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#deals">Motorcycles</a></li>
-             <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact us</a></li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
 
       <!-- HEADER -->
       <header class="header" id="home">
-        <div class="section_container header_container">
-          <h1 class="section_header">Find Your Perfect Ride Today</h1>
-        </div>
-      </header>
-    </section>
-
-
+        <div class="header_container section_container">
+          <div class="header-back">
+              <h1 class="section_header">Book Your Perfect
+                <span class="hero-line">
+                  <span class="span-ride">Ride</span>
+                  <span class="span-today">Today</span>
+                </span>
+              </h1>
+              <p class="section_subheader">Your next adventure starts here</p>
+          <div class="newsletter">
+            <h3>Sign up for newsletter</h3>
+            <form class="newsletter_form">
+              <input type="email" placeholder="Enter your email"/>
+              <button type="submit"><i class="ri-send-plane-2-fill"></i></button>
+            </form>
+          </div>
+          </div>
+    </header>
+     
+   
        <!-- SECTION HOW IT WORK -->
-     <section class="section_container about_container" id="about">
-        <div class="section_container">
-             <p class="section_subheader">HOW IT WORK </p>
-        <h2 class="section_header">Renting a motobike with us <span class="span_golden">is simple!</span> </h2>
+    <section class="section_container about_container" id="about">
+      <p class="section_subheader">How it work </p>
+      <h2 class="section_header">Renting a motorcycles with us is simple!</h2>
+      <div class="about_grid">
+        <div class="about_card">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+          <h4>Choose location</h4>
+          <p>Shoose the most convenient pickup location from our available rental points. We make it easy to find a motorcycle close to you and begin your adventure without delays</p>
         </div>
-         
-      
-        <div class="about_grid">
-            <div class="about_card">
-                <span><i class="ri-map-pin-2-fill"></i></span>
-                <h4>CHOOSE LOCATION</h4>
-                <p>Shoose the most convenient pickup location from our available rental points. We make it easy to find a motorcycle close to you and begin your adventure without delays</p>
-            </div>
-            <div class="about_card">
-                <span><i class="ri-calendar-event-fill"></i></span>
-                <h4>PICK-UP DATE</h4>
-                <p>Choose the dates that best suit your plans and reserve your motorcycle in just a few clicks. We offer flexible rental options to help you enjoy a comfortable and unforgettable journey.</p>
-            </div>
-            <div class="about_card">
-                <span><i class="ri-motorbike-fill"></i></span>
-                <h4>BOOK YOUR RIDE</h4>
-                <p>Select your preferred rental dates, review the details, and complete your reservation in just a few simple steps. Our booking process is fast, secure, and designed to save you time.</p>
-            </div>
-                 <div class="about_card">
-                <span><i class="ri-motorbike-fill"></i></span>
-                <h4>ENJOY YOUR LOURNEY</h4>
-                <p>Pick up your motorcycle and hit the road with confidence. Every vehicle is carefully maintained and inspected to ensure a safe, comfortable, and memorable riding experience.</p>
-            </div>
+        <div class="about_card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Pick-up date</h4>
+          <p>Choose the dates that best suit your plans and reserve your motorcycle in just a few clicks. We offer flexible rental options to help you enjoy a comfortable and unforgettable journey.</p>
         </div>
-     </section>
+        <div class="about_card">
+          <span><i class="ri-motorbike-fill"></i></span>
+          <h4>Book your ride</h4>
+          <p>Select your preferred rental dates, review the details, and complete your reservation in just a few simple steps. Our booking process is fast, secure, and designed to save you time.</p>
+        </div>
+        <div class="about_card">
+          <span><i class="ri-compass-3-fill"></i></span>
+          <h4>Enjoy your journey</h4>
+            <p>Pick up your motorcycle and hit the road with confidence. Every vehicle is carefully maintained and inspected to ensure a safe, comfortable, and memorable riding experience.</p>
+          </div>
+        </div>
+      </section>
 
 
-     <!-- banner four  -->
-      <section class="header_four" id="home">
+       <!-- banner_under_about -->
+      <section class="banner_under_about" id="home">
         <div class="section_container banner_container">
-           <p class="section_subheader banner-title">READY TO RIDE?</p>
-        <h2 class="section_header ">CHOOSE YOUR MOTORCYCLE AND HIT THE ROAD </h2>
         </div>
-         <div class="newsletter">
-  <h4>SIGN UP FOR NEWSLETTER</h4>
-
-  <form class="newsletter_form">
-    <input type="email" placeholder="Enter your email" />
-    <button type="submit">
-      <i class="ri-send-plane-2-fill"></i>
-    </button>
-  </form>
-</div>
-
       </section>
     </section>
 
-    
 
-
-    
-    <!-- SECTION DEALS -->
+     <!-- SECTION DEALS -->
      <section class="section_container deals_container" id="deals">
-        <div class="section_container">
          <p class="section_subheader text_animation"> Start your adventure the freedom</p>
-        <h2 class="section_header ">Most popular motobike <span class="span_golden">rental deals</span></h2>
-        </div>
-        
-        
+         <h2 class="section_header ">Most popular motorcycles rental deals</h2>
+       
         <input type="radio" name="bike" id="bmw" checked hidden>
         <input type="radio" name="bike" id="yamaha" hidden>
          <input type="radio" name="bike" id="honda" hidden>
@@ -160,24 +150,16 @@
                     <span>(550)</span>
                 </div>
                 <h4>BMW G310R</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
-                     <a href="#">Rent Now<span><i class="ri-arrow-right-circle-fill"></i></span></a>
+                     <button type="button">Rent Now<span><i class="ri-arrow-right-circle-fill"></i></span></button>
                 </div>
                 </div>
 
@@ -192,20 +174,12 @@
                     <span>(230)</span>
                 </div>
                 <h4>BMW R1200R</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -225,20 +199,12 @@
                     <span>(450)</span>
                 </div>
                 <h4>BMW S1000RR</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 Pe0ple
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span>400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$140<span>/Per Day</span></h3>
@@ -258,20 +224,12 @@
                     <span>(340)</span>
                 </div>
                 <h4>BMW K1300S</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span>400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -295,20 +253,12 @@
                     <span>(247)</span>
                 </div>
                 <h4>Yamaha YZFR15</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span>400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$130<span>/Per Day</span></h3>
@@ -327,20 +277,12 @@
                     <span>(550)</span>
                 </div>
                 <h4>Yamaha FZ09</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -360,20 +302,12 @@
                     <span>(150)</span>
                 </div>
                 <h4>Yamaha Tracer 900</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 Pe0ple
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$140<span>/Per Day</span></h3>
@@ -393,20 +327,12 @@
                     <span>(350)</span>
                 </div>
                 <h4>Yamaha XT1200Z</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 Pe0ple
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -428,20 +354,12 @@
                     <span>(550)</span>
                 </div>
                 <h4>Honda CB600F</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -460,20 +378,12 @@
                     <span>(250)</span>
                 </div>
                 <h4>Honda CB500</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 Pe0ple
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$120<span>/Per Day</span></h3>
@@ -493,20 +403,12 @@
                     <span>(680)</span>
                 </div>
                 <h4>Honda Africa Twin</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$130<span>/Per Day</span></h3>
@@ -526,20 +428,12 @@
                     <span>(233)</span>
                 </div>
                 <h4>Honda Gold Wing</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$125<span>/Per Day</span></h3>
@@ -561,20 +455,12 @@
                     <span>(550)</span>
                 </div>
                 <h4>Harley-Davidson VRSC</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 Pe0ple
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -593,20 +479,12 @@
                     <span>(850)</span>
                 </div>
                 <h4>Harley-Davidson Street Glide</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -626,20 +504,12 @@
                     <span>(450)</span>
                 </div>
                 <h4>Tesla Model S</h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>2 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                 <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$140<span>/Per Day</span></h3>
@@ -659,20 +529,12 @@
                     <span>(470)</span>
                 </div>
                 <h4>Harley-Davidson CVO Touring </h4>
-                <div class="deals_card_grid">
-                    <div>
-                        <span><i class="ri-group-line"></i></span>4 People
-                    </div>
-                    <div>
-                        <span><i class="ri-steering-2-line"></i></span>Auto
-                    </div>
-                    <div>
-                        <span><i class="ri-speed-up-line"></i></span> 400km
-                    </div>
-                    <div>
-                        <span><i class="ri-motorbike-fill"></i></span>Electric
-                    </div>
-                </div>
+                <ul class="deals_card_grid">
+                    <li><span><i class="ri-group-line"></i></span>2 People</li>
+                    <li><span><i class="ri-steering-2-line"></i></span>Auto</li>
+                    <li><span><i class="ri-speed-up-line"></i></span> 400km</li>
+                    <li><span><i class="ri-motorbike-fill"></i></span>Electric</li>
+                </ul>
                 <hr>
                 <div class="deals_card_footer">
                     <h3>$150<span>/Per Day</span></h3>
@@ -682,109 +544,67 @@
         </div>
      </section>
 
+
+  
+     <!-- banner__near_deals- -->
+      <section class="banner__near_deals">
+        <div class="section_container">
+        </div>
+      </section>
+
+
+
+        <!-- Section banner-location -->
+      <section class="banner_location">
+        <div class="section_container banner_container">
+          <div class="map_header">
+            <div class="map_title">
+              <h2 class="section_header"> Choose a rental location near you</h2>
+              <a class="btn"href="https://www.google.com/maps/place/Prague"target="_blank">Open in Maps</a>
+            </div>
+            <div class="map_frame">
+              <div class="map_pin pin_prague_1">
+                <ul class="pin_ripple">
+                  <li></li><li></li><li></li>
+                </ul>
+              </div>
+              <div class="map_pin pin_prague_2">
+                <ul class="pin_ripple">
+                  <li></li><li></li><li></li>
+                </ul>
+              </div>
+              <div class="map_pin pin_prague_3">
+                <ul class="pin_ripple">
+                  <li></li><li></li><li></li>
+                </ul>
+              </div>
+              <div class="map_pin pin_prague_4">
+                <ul class="pin_ripple">
+                  <li></li><li></li><li></li>
+                </ul>
+              </div>
+              <iframe
+              src="https://www.google.com/maps?q=Prague%2C%20Czech%20Republic&hl=en&z=12&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Prague Motorcycle Rental Map">
+            </iframe>
+          </div>
+        </div>
+    </section>
+
+
+    
        <!-- banner five  -->
       <section class="header_f" id="home">
         <div class="section_container banner_container">
-           <p class="section_subheader text_animation">START YOUR JOURNEY</p>
-        <h2 class="section_header">BOOK YOUR PERFECT RIDE TODAY</h2>
         </div>
       </section>
     </section>
 
-      <!-- FOLLOW US ON -->
-    <section class="section_container instagram_container" id="follow">
-        <div class="section_container">
-            <p class="section_subheader text_animation">FOLLOW US ON</p>
-          <h2 class="section_header">INSTAGRAM</h2>
-        </div>
-            
-       <div class="slider">
-        <div class="list">
-          <div class="item" style="--position: 1">
-            <img src="./images/images-moto/1.png" alt="" />
-          </div>
-          <div class="item" style="--position: 2">
-            <img src="./images/images-moto/8.png" alt="" />
-          </div>
-          <div class="item" style="--position: 3">
-            <img src="../images/images-moto/16.png" alt="" />
-          </div>
-          <div class="item" style="--position: 4">
-            <img src="./images/images-moto/3.png" alt="" />
-          </div>
-          <div class="item" style="--position: 5">
-            <img src="./images/images-moto/5.png" alt="" />
-          </div>
-          <div class="item" style="--position: 6">
-            <img src="./images/images-moto/6.png" alt="" />
-          </div>
-          <div class="item" style="--position: 7">
-            <img src="./images/images-moto/2.png" alt="" />
-          </div>
-          <div class="item" style="--position: 8">
-            <img src="./images/images-moto/13.png" alt="" />
-          </div>
-          <div class="item" style="--position: 9">
-            <img src="./images/images-moto/8.png" alt="" />
-          </div>
-          <div class="item" style="--position: 10">
-            <img src="./images/images-moto/1.png" alt="" />
-          </div>
-  
-        </div>
-      </div>
+     
 
-      <div class="slider slider-second" reverse="true">
-        <div class="list">
-          <div class="item" style="--position: 1">
-            <img src="./images/images-moto/20.png" alt="" />
-          </div>
-          <div class="item" style="--position: 2">
-            <img src="./images/images-moto/25.png" alt="" />
-          </div>
-          <div class="item" style="--position: 3">
-            <img src="./images/images-moto/17.png" alt="" />
-          </div>
-          <div class="item" style="--position: 4">
-            <img src="./images/images-moto/23.png" alt="" />
-          </div>
-          <div class="item" style="--position: 5">
-            <img src="./images/images-moto/14.png" alt="" />
-          </div>
-          <div class="item" style="--position: 6">
-            <img src="./images/images-moto/26.png" alt="" />
-          </div>
-          <div class="item" style="--position: 7">
-            <img src="./images/images-moto/9.png" alt="" />
-          </div>
-          <div class="item" style="--position: 8">
-            <img src="./images/images-moto/27.png" alt="" />
-          </div>
-          <div class="item" style="--position: 9">
-            <img src="./images/images-moto/22.png" alt="" />
-          </div>
-          <div class="item" style="--position: 10">
-            <img src="./images/images-moto/27.png" alt="" />
-          </div>
-        </div>
-      </div>
-       </section>
-
-       
-
-        <!-- header id="home"  -->
-      <section class="header_third" id="home">
-        <div class="section_container banner_container">
-           <p class="section_subheader text_animation">EXPLORE WITHOUT LIMITS</p>
-        <h2 class="section_header">YOUR NEXT ADVENTURE STARTS HERE</h2>
-        </div>
-      </section>
-    </section>
-
-
-
-
-<section class="section_container reviews_container" id="reviews">
+    <section class="section_container reviews_container" id="reviews">
   <div class="reviews_heading">
     <p class="section_subheader text_animation">EIGHTYEIGHT REVIEWS</p>
     <h2 class="section_header">WHAT PEOPLE SAY ABOUT US?</h2>
@@ -893,15 +713,113 @@
 
   </ul>
 </section>
+       
+
+        <!-- header id="home"  -->
+      <section class="banner_under_follow" id="home">
+        <div class="section_container banner_container">
+        </div>
+      </section>
+    </section>
 
 
 
-    <!--Banner  -->
-    <section class="Banner">
-      <div class="section_container banner_container">
-        <p class="section_subheader text_animation">YOUR ADVENTURE AWAITS</p>
-        <h2 class="section_header">LET'S MAKE YOUR NEXT RIDE UNFORGETTABLE</h2>
+
+
+
+
+ <!-- FOLLOW US ON -->
+    <section class="section_container instagram_container" id="follow">
+          <div class="instagram_header">
+            <p class="section_subheader text_animation">Follow us on</p>
+            <h2 class="section_header">
+              <a href="https://instagram.com/youraccount">Instagram</a>
+            </h2>
+          </div>
+          
+     
+            
+       <div class="slider">
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="./images/images-moto/1.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./images/images-moto/8.png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="../images/images-moto/16.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./images/images-moto/3.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./images/images-moto/5.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./images/images-moto/6.png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./images/images-moto/2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./images/images-moto/13.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./images/images-moto/8.png" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="./images/images-moto/1.png" alt="" />
+          </div>
+  
+        </div>
       </div>
+
+      <div class="slider slider-second" reverse="true">
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="./images/images-moto/20.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./images/images-moto/25.png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="./images/images-moto/17.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./images/images-moto/23.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./images/images-moto/14.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./images/images-moto/26.png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./images/images-moto/9.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./images/images-moto/27.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./images/images-moto/22.png" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="./images/images-moto/27.png" alt="" />
+          </div>
+        </div>
+      </div>
+       </section>
+
+
+
+    <!-- Section banner-near-footer  -->
+    <section class="banner-near-footer ">
+      <div class="section_container banner_container">
+ <p class="section_subheader text_animation">Your adventure awaits</p>
+        <h2 class="section_header">Let's make your next ride unforgettable</h2>
+      </div>
+       
     </section>
 
     <!--footer  -->
@@ -916,15 +834,9 @@
             trusted service.
           </p>
           <ul class="footer_socials">
-            <li>
-              <a href=""><i class="ri-facebook-circle-fill"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="ri-youtube-fill"></i></a>
-            </li>
+            <li><a href=""><i class="ri-facebook-circle-fill"></i></a></li>
+            <li><a href=""><i class="ri-instagram-line"></i></a></li>
+            <li><a href=""><i class="ri-youtube-fill"></i></a></li>
           </ul>
         </div>
         <div class="footer_col">

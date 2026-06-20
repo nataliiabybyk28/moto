@@ -1,51 +1,55 @@
 @use "../variables/index" as *;
+@use "../base/index" as *;
 
 .section_container {
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 0rem 1.2rem 0rem;
 }
-
+.section_header {
+  max-width: 1000px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: $text-main;
+  font-family: $font-heading;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
 .section_subheader {
   max-width: 800px;
-  margin-inline: auto;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: $white;
   letter-spacing: 5px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1200px) {
   .span_golden {
     display: block;
-    position: relative;
-    left: 140px;
-  }
 
-  .section_container :is(.section_header, .section_subheader) {
-    text-align: left;
-  }
+    // left: 2rem;
+    color: $gold-main;
+    font-size: 2.5rem;
 
-  .section_container :is(.section_header) {
-    margin: 0;
-  }
-}
+    position: absolute;
+    font-size: 2.5rem;
+    top: 0%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    // opacity: 0.5;
+    z-index: -1;
 
-@media screen and (min-width: 768px) {
-  .section_container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section_container {
-    max-width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    white-space: nowrap;
+    pointer-events: none;
   }
 }

@@ -35,27 +35,25 @@ button {
 #reviews,
 #contact,
 #follow {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 80px;
 }
 
-.section_container {
-  max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .section_container {
-    max-width: 768px;
+@media (min-width: 480px) and (max-width: 1024px) {
+  #about,
+  #deals,
+  #reviews,
+  #contact,
+  #follow {
+    scroll-margin-top: 60px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section_container {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+@media (max-width: 480px) {
+  #about,
+  #deals,
+  #reviews,
+  #contact,
+  #follow {
+    scroll-margin-top: 140px;
   }
 }
